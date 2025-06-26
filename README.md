@@ -5,8 +5,7 @@ Welcome to your introduction to Infrastructure as Code with Terraform. Today we 
 
 ## Initial setup
 
-As long as you are registered for the event you can request your environment at [lab.devopsplayground.org](https://lab.devopsplayground.org/)
-We created a virtual machine for you with a terminal and IDE, as well as a running Minecraft server. We installed the mode so you can render the world in the browser. There are different views available, but for this workshop, we are going to use flat and 3d-view as shown in the screenshot below:
+I created a virtual machine for you with a terminal and IDE, as well as a running Minecraft server. I installed the mods so you can render the world in the browser. There are different views available, but for this workshop, we are going to use flat and 3d-view as shown in the screenshot below:
 
 <p align="center">
   <img src="./lab_1/images/mc-map.png" />
@@ -23,10 +22,10 @@ mc-logs # logs of Minecraft server - you can see the status and progress of your
 #### <b>Note:</b> If you have your own Minecraft licence and Minecraft client installed - feel free to log in to the server and see the changes to your world in real time without the need to render.
 If you plan to log into the server you may wish to run the following commands to make it a little easier to see what you build.
 ```bash
-docker exec mc mc-send-to-console /op <your Minecraft name>
-docker exec mc mc-send-to-console /gamerule doDaylightCycle false
-docker exec mc mc-send-to-console /gamerule doWeatherCycle false
-docker exec mc mc-send-to-console /time set noon
+docker exec --user 1000 mc mc-send-to-console /op <your Minecraft name>
+docker exec --user 1000 mc mc-send-to-console /gamerule doDaylightCycle false
+docker exec --user 1000 mc mc-send-to-console /gamerule doWeatherCycle false
+docker exec --user 1000 mc mc-send-to-console /time set noon
 ```
 
 ## DIY

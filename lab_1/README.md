@@ -28,7 +28,7 @@ We instructed Terraform on which version of the provider to use, so now we need 
 ```go
 provider "minecraft" {
   address  = "127.0.0.1:25575"
-  password = "PandaTime"
+  password = "Terraform"
 }
 ```
 In this case, we provide a password as a string, which, of course, is not advisable. Terraform can integrate with secret managing services (such as Hashicorp Vault), or use credentials from the environment (such as environment variables, aws credential file etc.).

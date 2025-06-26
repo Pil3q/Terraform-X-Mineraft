@@ -5,7 +5,7 @@ Now that we proved that we can build something useful and reuse it with modules 
 Let's get to our `main.tf` file and remove our cube module and replace it with the snippet below:
 ```go
 module "minecraft_words" {
-  source   = "git::https://github.com/DevOpsPlayground/minecraft_alphabet_module.git"
+  source   = "git::https://github.com/Pil3q/minecraft_alphabet_module.git"
   material = "minecraft:stone"
   string   = "Hello Pandas!"
 
@@ -37,7 +37,7 @@ It might take a minute to render but you should see your text written all over y
 Thanks to Massi we have a few more modules for you. Of course, we could not have a Playground without the panda so let's go to our `main.tf` file and replace our alphabet module with the following.
 ```go
 module "panda" {
-  source   = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//panda"
+  source   = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//panda"
   material = "minecraft:stone"
 
   position = {
@@ -65,7 +65,7 @@ In a minute you should see a beautiful panda like on the picture below:
 We have two more creations from Massi for you to use so let's got back to our `main.tf` file and replace it with blow:
 ```go
 module "cube" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//cube"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//cube"
   material = "minecraft:stone"
 
   position = {
@@ -82,7 +82,7 @@ module "cube" {
 }
 
 module "hollow-cube" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
   material = "minecraft:stone"
 
   position = {
@@ -143,7 +143,7 @@ locals {
 }
 
 module "tower1" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
 
   material = local.towers.material
 
@@ -161,7 +161,7 @@ module "tower1" {
 }
 
 module "wall12" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
 
   material = local.wall.material
 
@@ -179,7 +179,7 @@ module "wall12" {
 }
 
 module "tower2" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
 
   material = local.towers.material
 
@@ -197,7 +197,7 @@ module "tower2" {
 }
 
 module "tower3" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
 
   material = local.towers.material
 
@@ -215,7 +215,7 @@ module "tower3" {
 }
 
 module "tower4" {
-  source = "git::https://github.com/DevOpsPlayground/terraform_minecraft_playground.git//square"
+  source = "git::https://github.com/Pil3q/terraform_minecraft_playground.git//square"
 
   material = local.towers.material
 

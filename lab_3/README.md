@@ -16,7 +16,7 @@ module "minecraft_words" {
   }
 }
 ```
-We are going to leverage the great work our colleague [Massi](https://www.linkedin.com/in/massimilianovallascas/) did - you can replace string - with the string of your choice - Just don't go too crazy - an essay may not fit in your map!. Of course, you can go to the [github repository](https://github.com/DevOpsPlayground/minecraft_alphabet_module) to see this module with Readme and the examples of how to use it. Before you are going to do that - let's run the commands below while in the `/home/playground/workdir/Terraform-X-Minecraft` directory:
+We are going to leverage the great work that was already done for us! You can replace string - with the string of your choice - Just don't go too crazy - an essay may not fit in your map!. Of course, you can go to the [github repository](https://github.com/Pil3q/minecraft_alphabet_module) to see this module with Readme and the examples of how to use it. Before you are going to do that - let's run the commands below while in the `/home/playground/workdir/Terraform-X-Minecraft` directory:
 ```bash
 terraform init
 ls .terraform/modules/minecraft_words/

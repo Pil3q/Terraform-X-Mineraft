@@ -47,7 +47,7 @@ The output should look like below:
 
 ## Creating your first resource 
 
-Our next step is to create and then deploy our first building block in Minecraft, using terraform resource. Let's create `main.tf` file in the `/home/playground/workdir/Terraform-X-Minecraft` directory. To define a resource, we need to provide the required input arguments. In this case, we need to define them all, but in different providers, some or even all the inputs might be optional. To follow your work in the view more easily, please use the coordinates below - you can access it at `<your-panda>.devopsplayground.org:8123`
+Our next step is to create and then deploy our first building block in Minecraft, using terraform resource. Let's create `main.tf` file in the `/home/playground/workdir/Terraform-X-Minecraft` directory. To define a resource, we need to provide the required input arguments. In this case, we need to define them all, but in different providers, some or even all the inputs might be optional. To follow your work in the view more easily, please use the coordinates below - you can access it at `<your-ip>:8123`
 
 ```go
 resource "minecraft_block" "stone" {
